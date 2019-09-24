@@ -1,10 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>😃</title>
-</head>
-<body style="background-color: #2EAFAC; text-align: center; font-size: 3rem; font-family: sans-serif; color: white;">
-    <h1>Nothing to see here!</h1>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title>😃</title>
+        <!-- Loads <model-viewer> for modern browsers: -->
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"> </script>
+
+        <!-- Loads <model-viewer> for old browsers like IE11: -->
+        <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"> </script>
+        <link rel="stylesheet" href="./style.css" type="text/css" charset="utf-8">
+    </head>
+    <body style="background-color: #2EAFAC; text-align: center; font-size: 3rem; font-family: sans-serif; color: white;">
+        <h1>Nothing to see here!</h1>
+
+        <model-viewer ar src="./models/cwervo/logo.glb" ios-src="./models/cwervo/logo.usdz" auto-rotate camera-controls background-color="#2EAFAC">
+        </model-viewer>
+    </body>
 </html>
